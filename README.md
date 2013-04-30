@@ -1,6 +1,6 @@
-# Logger::Ltsv
+# logger-ltsv
 
-TODO: Write a gem description
+A LTSV logger.
 
 ## Installation
 
@@ -18,7 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Logger::LTSVLogger
+
+```ruby
+require "logger"
+require "logger/ltsv"
+
+logger = Logger.new(STDOUT)
+logger.formatter = Logger::LTSVLogger.new
+logger.info("foobar")
+```
+
+### LTSVLogger
+
+```ruby
+require "logger/ltsv"
+
+logger = LTSVLogger.new(STDOUT)
+logger.info("foobar")
+```
 
 ## Contributing
 
@@ -27,3 +45,4 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
