@@ -18,14 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-### Logger::LTSVLogger
+### Logger::LTSVFormatter
 
 ```ruby
 require "logger"
 require "logger/ltsv"
 
 logger = Logger.new(STDOUT)
-logger.formatter = Logger::LTSVLogger.new
+logger.formatter = Logger::LTSVFormatter.new
 logger.info("foobar")
 ```
 
