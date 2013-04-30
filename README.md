@@ -6,7 +6,9 @@ A LTSV logger.
 
 Add this line to your application's Gemfile:
 
-    gem 'logger-ltsv'
+```ruby
+gem 'logger-ltsv', require: 'logger/ltsv'
+```
 
 And then execute:
 
@@ -21,21 +23,21 @@ Or install it yourself as:
 ### Logger::LTSVFormatter
 
 ```ruby
-require "logger"
-require "logger/ltsv"
+require 'logger'
+require 'logger/ltsv'
 
 logger = Logger.new(STDOUT)
 logger.formatter = Logger::LTSVFormatter.new
-logger.info("foobar")
+logger.info('foobar')
 ```
 
 ### LTSVLogger
 
 ```ruby
-require "logger/ltsv"
+require 'logger/ltsv'
 
 logger = LTSVLogger.new(STDOUT)
-logger.info("foobar")
+logger.info('foobar')
 ```
 
 ## Contributing
