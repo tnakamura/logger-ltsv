@@ -5,12 +5,12 @@ require 'logger/ltsv/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "logger-ltsv"
-  spec.version       = Logger::Ltsv::VERSION
+  spec.version       = Logger::LTSV::VERSION
   spec.authors       = ["tnakamura"]
   spec.email         = ["griefworker@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{LTSV logger}
+  spec.summary       = %q{LTSV logger}
+  spec.homepage      = "https://github.com/tnakamura/logger-ltsv"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
