@@ -1,4 +1,4 @@
-# logger-ltsv
+# logger-ltsv [![Build Status](https://travis-ci.org/tnakamura/logger-ltsv.svg?branch=master)](https://travis-ci.org/tnakamura/logger-ltsv)
 
 A LTSV logger.
 
