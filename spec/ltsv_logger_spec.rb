@@ -21,8 +21,8 @@ describe LTSVLogger do
 
       @output.seek(0)
       ltsv = @output.read.strip.split("\t")
-      expect(ltsv.include?("severity:INFO")).to be_true
-      expect(ltsv.include?("message:Test")).to be_true
+      expect(ltsv).to include("severity:INFO")
+      expect(ltsv).to include("message:Test")
     end
 
     it "ハッシュを LTSV で出力できる" do
@@ -30,9 +30,9 @@ describe LTSVLogger do
 
       @output.seek(0)
       ltsv = @output.read.strip.split("\t")
-      expect(ltsv.include?("severity:INFO")).to be_true
-      expect(ltsv.include?("name:Foo")).to be_true
-      expect(ltsv.include?("age:16")).to be_true
+      expect(ltsv).to include("severity:INFO")
+      expect(ltsv).to include("name:Foo")
+      expect(ltsv).to include("age:16")
     end
   end
 end
